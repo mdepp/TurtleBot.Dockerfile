@@ -38,8 +38,3 @@ RUN cd /tmp &&\
     cd Sensor-Bin-Linux-x64-v5.1.2.1 &&\
     bash install.sh &&\
     rm -rf /tmp/v0.93-5.1.2.1.tar.gz /tmp/SensorKinect-0.93-5.1.2.1
-
-# Add entrypoint
-ADD turtlebot_entrypoint.sh /turtlebot_entrypoint.sh
-ENTRYPOINT ["/turtlebot_entrypoint.sh"]
-CMD []
